@@ -26,7 +26,7 @@ django.jQuery(function () {
             } else {
                 $nxt = django.jQuery('<div class="outer_jsoneditor" cols="40" rows="10" id="' + id + '" name="' + name + '"></div>');
             }
-            $f.parent().append($nxt);
+            $f.after($nxt);
             var fnc = function (f, nxt, value) {
                 var initOptions = Object.assign({}, initOverrides ? initOverrides : django_jsoneditor_init);
                 initOptions['schema'] = jsonschema;
